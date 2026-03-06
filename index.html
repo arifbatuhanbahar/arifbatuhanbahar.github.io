@@ -2,40 +2,67 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Ana Sayfa - Portfolyo</title>
+    <title>Arif Batuhan BAHAR | Root Workspace</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="interests.html">İlgi Alanlarım</a></li>
-            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="index.html">/home/root</a></li>
+            <li><a href="about.html">/usr/about</a></li>
+            <li><a href="interests.html">/etc/interests</a></li>
+            <li><a href="contact.html">/var/contact</a></li>
         </ul>
     </nav>
 
-    <header>
+    <header class="hero-header">
         <h1>Arif Batuhan BAHAR</h1>
-        <p>Bilgisayar Mühendisliği | Web Programlama Öğrencisi</p>
+        <p>>_ Bilgisayar Mühendisi & Sistem Geliştirici</p>
     </header>
 
     <main class="container">
-        <div class="content">
-            <h2>İçerik</h2>
-            <p>Bu web sitesi, Web Programlama dersi kapsamında hazırlanmış örnek bir kişisel tanıtım sayfasıdır. HTML'in temel etiketlerini ve sayfa yapısını öğrenmek amacıyla tasarlanmıştır.</p>
-            <p>Üniversite eğitimime Marmara Üniversitesi Bilgisayar Mühendisliği bölümünde devam etmekteyim. Siber güvenlik ve web teknolojileri alanlarına özel bir ilgim bulunmaktadır.</p>
+        <div class="content terminal-window">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">bash - arifbatuhan@workspace:~</span>
+            </div>
+            <div class="terminal-body">
+                <p><span class="prompt">arifbatuhan@workspace:~$</span> whoami</p>
+                <p>Siber güvenlik, işletim sistemleri ve veritabanı yönetimi alanlarında özelleşen bilgisayar mühendisi. Güvenli kodlama prensiplerini ve sistem mimarilerini temel alarak ölçeklenebilir yazılım projeleri geliştirmekteyim.</p>
+                
+                <p><span class="prompt">arifbatuhan@workspace:~$</span> cat /opt/skills/core_competencies.txt</p>
+                <p>Linux tabanlı sistem yönetimi, ağ güvenliği, sızma testi metodolojileri ve yapay sinir ağları (CNN, RNN, LSTM) üzerine aktif araştırmalar ve geliştirmeler yürütmekteyim. Algoritma optimizasyonu ve ileri seviye veri yapıları temel odak noktalarımdandır.</p>
+                
+                <p><span class="prompt">arifbatuhan@workspace:~$</span> ./run_system_check.sh</p>
+                <p>[OK] Ağ trafiği ve güvenlik protokolleri analiz ediliyor...</p>
+                <p>[OK] İlişkisel veritabanı bağlantıları şifreleniyor...</p>
+                <p>[OK] Derin öğrenme algoritmaları test ediliyor...</p>
+                <p class="blink">_</p>
+            </div>
         </div>
         
-        <aside class="sidebar">
-            <h2>Yan Menü / Bilgi</h2>
-            <p>Bu alanda web programlama öğrenme hedeflerim yer almaktadır. HTML temellerini kavramak, CSS ile sayfa tasarlamak ve JavaScript ile etkileşim eklemek öncelikli amaçlarımdır.</p>
-            <p>Ayrıca faydalı kaynaklar olarak MDN Web Docs, W3Schools ve GitHub platformlarını aktif olarak takip etmekte ve projelerimde kullanmaktayım.</p>
+        <aside class="sidebar tech-stack">
+            <h2>Sistem Parametreleri</h2>
+            <div class="skill-group">
+                <h3>Odak Alanları</h3>
+                <p>Siber Güvenlik, İşletim Sistemleri, Yapay Zeka Modelleme, Sistem Analizi</p>
+            </div>
+            <div class="skill-group">
+                <h3>Çekirdek Teknolojiler</h3>
+                <p>Java, C#, .NET, Bash Scripting, Linux Sistem Yönetimi</p>
+            </div>
+            <div class="skill-group">
+                <h3>Veri Mimarisi</h3>
+                <p>PostgreSQL, MSSQL, İleri Seviye Veri Yapıları, Algoritma Tasarımı</p>
+            </div>
+            <a href="contact.html" class="action-btn">Sisteme Bağlan (İletişim)</a>
         </aside>
     </main>
 
     <footer>
-        <p>&copy; 2026 Arif Batuhan BAHAR - Web Programlama Dersi HTML+CSS Alıştırması</p>
+        <p>&copy; 2026 Arif Batuhan BAHAR - Root Access Granted.</p>
     </footer>
 </body>
 </html>
