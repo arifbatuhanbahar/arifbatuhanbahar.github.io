@@ -2,69 +2,52 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>İletişim</title>
+    <title>İletişim | Arif Batuhan BAHAR</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>İletişim</h1>
-        <h2>Benimle iletişime geçebileceğiniz bilgiler</h2>
-    </header>
-
     <nav>
         <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="interests.html">İlgi Alanlarım</a></li>
-            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="index.html">/home/root</a></li>
+            <li><a href="about.html">/usr/about</a></li>
+            <li><a href="interests.html">/etc/interests</a></li>
+            <li><a href="contact.html">/var/contact</a></li>
         </ul>
     </nav>
 
+    <header class="hero-header">
+        <h1>İletişim</h1>
+        <p>>_ Benimle iletişime geçebileceğiniz bilgiler ve form</p>
+    </header>
+
     <main class="contact-page-main">
-        <h3>İletişim Bilgilerim</h3>
-        <ul>
-            <li>E-posta: <a href="mailto:arifbatuhanbahar@gmail.com">arifbatuhanbahar@gmail.com</a></li>
-            <li>Telefon: +90 551 828 35 66</li>
-            <li>GitHub: <a href="https://github.com/arifbatuhanbahar" target="_blank">GitHub Profilim</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/arif-batuhan-bahar-58b42228a" target="_blank">LinkedIn Profilim</a></li>
-        </ul>
 
-        <hr style="margin: 40px 0; border: 0; border-top: 1px solid #d1d5db;">
+        <section class="contact-info">
+            <h2>İletişim Bilgilerim</h2>
+            <ul>
+                <li>E-posta: <a href="mailto:arifbatuhanbahar@gmail.com">arifbatuhanbahar@gmail.com</a></li>
+                <li>Telefon: +90 551 828 35 66</li>
+                <li>GitHub: <a href="https://github.com/arifbatuhanbahar" target="_blank">github.com/arifbatuhanbahar</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/arif-batuhan-bahar-58b42228a" target="_blank">linkedin.com/in/arif-batuhan-bahar</a></li>
+            </ul>
+        </section>
 
+        <hr class="section-divider">
+
+        <!-- Lab 3 Gereksinimi: contact-container class'lı div içinde form -->
         <div class="contact-container">
-            <h2 style="text-align: center; border-bottom: none;">Detaylı İletişim Formu</h2>
+            <h2>İletişim Formu</h2>
             <form action="#" method="POST">
-                
-                <label for="fullName">Ad Soyad:</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Örn: Ali Veli" required>
 
+                <!-- Ad Soyad (text) -->
+                <label for="fullName">Ad Soyad:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Örn: Asaf Karataş" required>
+
+                <!-- E-posta (email) -->
                 <label for="email">E-posta Adresi:</label>
                 <input type="email" id="email" name="email" placeholder="ornek@mail.com" required>
 
-                <label for="password">Başvuru Takip Şifresi:</label>
-                <input type="password" id="password" name="password" placeholder="Şifrenizi girin">
-
-                <label>İletişim Tercihi:</label>
-                <div class="radio-group">
-                    <input type="radio" id="contactEmail" name="contactPref" value="email" checked>
-                    <label for="contactEmail">Bana e-posta ile ulaşın</label><br>
-                    
-                    <input type="radio" id="contactPhone" name="contactPref" value="phone">
-                    <label for="contactPhone">Bana telefonla ulaşın</label>
-                </div>
-
-                <label>İlgi Alanları / Yetenekler:</label>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="skillHtml" name="skills" value="HTML">
-                    <label for="skillHtml">HTML</label><br>
-                    
-                    <input type="checkbox" id="skillCss" name="skills" value="CSS">
-                    <label for="skillCss">CSS</label><br>
-                    
-                    <input type="checkbox" id="skillAlgo" name="skills" value="Algoritma">
-                    <label for="skillAlgo">Algoritma</label>
-                </div>
-
+                <!-- Konu (select) -->
                 <label for="subject">Konu:</label>
                 <select id="subject" name="subject" required>
                     <option value="" disabled selected>Lütfen bir konu seçin...</option>
@@ -73,26 +56,20 @@
                     <option value="Geri Bildirim">Geri Bildirim</option>
                 </select>
 
-                <label for="resume">Özgeçmiş (CV) veya Fotoğraf Yükle:</label>
-                <input type="file" id="resume" name="resume">
-
+                <!-- Mesaj (textarea) -->
                 <label for="message">Mesajınız:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Detaylı mesajınızı buraya yazabilirsiniz..." required></textarea>
 
-                <div class="button-group">
-                    <button type="submit" class="submit-btn">Gönder</button>
-                    <button type="reset" class="reset-btn">Temizle</button>
-                </div>
-                
+                <!-- Gönder butonu (submit) -->
+                <button type="submit" class="submit-btn">Gönder</button>
+
             </form>
         </div>
-        
-        <p style="text-align: center; margin-top: 30px;"><a href="index.html">Ana sayfaya geri dön</a></p>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Web Programlama Dersi</p>
+        <p>&copy; 2026 Arif Batuhan BAHAR - Root Access Granted.</p>
     </footer>
 </body>
 </html>
-
