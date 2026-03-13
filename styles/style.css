@@ -117,3 +117,99 @@ footer p {
     color: #6b7280;
     font-size: 14px;
 }
+
+/* --- Lab-3 İletişim Formu Gereksinimleri --- */
+
+.contact-container {
+    width: 600px;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.contact-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container input[type="password"],
+.contact-container select,
+.contact-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.contact-container .radio-group,
+.contact-container .checkbox-group {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.contact-container .radio-group label,
+.contact-container .checkbox-group label {
+    display: inline;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.contact-container input[type="radio"],
+.contact-container input[type="checkbox"] {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.contact-container input[type="file"] {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 14px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-container button {
+    border: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    flex: 1;
+    transition: background-color 0.3s;
+}
+
+.contact-container .submit-btn {
+    background-color: #007bff;
+}
+
+.contact-container .submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.contact-container .reset-btn {
+    background-color: #dc3545;
+}
+
+.contact-container .reset-btn:hover {
+    background-color: #c82333;
+}
