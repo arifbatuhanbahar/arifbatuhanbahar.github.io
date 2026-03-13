@@ -109,7 +109,7 @@ footer {
     text-align: center;
     padding: 30px;
     background-color: #111827;
-    margin-top: 60px;
+    margin-top: 0;
 }
 
 footer p {
@@ -123,12 +123,12 @@ footer p {
 .contact-container {
     width: 600px;
     max-width: 100%;
-    margin: 40px auto;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 35px;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     background-color: #ffffff;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
 }
 
@@ -137,65 +137,79 @@ footer p {
     font-weight: 600;
     margin-bottom: 8px;
     color: #374151;
+    font-size: 15px;
 }
 
-.contact-container input[type="text"],
-.contact-container input[type="email"],
-.contact-container input[type="password"],
+/* Lab gereksinimi: Çoklu seçici kullanımı */
+.contact-container input,
 .contact-container select,
 .contact-container textarea {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
+    padding: 14px;
+    margin-bottom: 22px;
     border: 1px solid #d1d5db;
     border-radius: 4px;
     box-sizing: border-box;
     font-family: inherit;
     font-size: 14px;
+    background-color: #ffffff;
+}
+
+/* Yapısal düzeltme: Radyo ve Checkbox butonlarının %100 genişliğe ulaşıp form yapısını bozmasını engelleyen ezici kural */
+.contact-container input[type="radio"],
+.contact-container input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin-bottom: 12px;
+    margin-right: 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.contact-container input[type="file"] {
+    width: auto;
+    padding: 0;
+    border: none;
+    margin-bottom: 25px;
+    background-color: transparent;
 }
 
 .contact-container .radio-group,
 .contact-container .checkbox-group {
     background-color: #f9fafb;
-    padding: 15px;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    padding: 18px;
+    border-radius: 6px;
+    margin-bottom: 22px;
+    border: 1px solid #f3f4f6;
 }
 
 .contact-container .radio-group label,
 .contact-container .checkbox-group label {
     display: inline;
     font-weight: normal;
-    margin-left: 5px;
-}
-
-.contact-container input[type="radio"],
-.contact-container input[type="checkbox"] {
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.contact-container input[type="file"] {
-    margin-bottom: 20px;
-    display: block;
-    font-size: 14px;
+    color: #4b5563;
 }
 
 .button-group {
     display: flex;
     gap: 15px;
+    margin-top: 10px;
 }
 
-.contact-container button {
+.contact-container button,
+.contact-container input[type="submit"],
+.contact-container input[type="reset"] {
+    width: auto;
     border: none;
-    padding: 14px 24px;
+    padding: 16px 24px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
     color: #ffffff;
     flex: 1;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0;
 }
 
 .contact-container .submit-btn {
