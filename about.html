@@ -2,51 +2,59 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Hakkımda</title>
+    <title>Hakkımda | Arif Batuhan BAHAR</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>Hakkımda</h1>
-        <h2>Kendimi ve hedeflerimi tanıttığım sayfa</h2>
-    </header>
-
     <nav>
         <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="interests.html">İlgi Alanlarım</a></li>
-            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="index.html">/home/root</a></li>
+            <li><a href="about.html">/usr/about</a></li>
+            <li><a href="interests.html">/etc/interests</a></li>
+            <li><a href="contact.html">/var/contact</a></li>
         </ul>
     </nav>
 
-    <main>
-        <h3>Ben Kimim?</h3>
-        <p>Merhaba, ben Marmara Üniversitesi'nde Bilgisayar Mühendisliği <strong>3. sınıf öğrencisiyim</strong>. Teknolojiye ve yazılıma büyük bir ilgi duyuyor, kendimi sürekli geliştirmeyi hedefliyorum.</p>
-        <p>Özellikle <em>siber güvenlik</em>, işletim sistemleri ve veritabanı yönetimi konularında derinleşmeyi ve yenilikçi projeler üretmeyi seviyorum.</p>
+    <header class="hero-header">
+        <h1>Hakkımda</h1>
+        <p>>_ Kendimi ve hedeflerimi tanıttığım sayfa</p>
+    </header>
 
-        <h3>Eğitim Bilgilerim</h3>
-        <ul>
-            <li>Marmara Üniversitesi - Bilgisayar Mühendisliği (Lisans)</li>
-            <li>Web Programlama Dersi</li>
-        </ul>
+    <main class="container">
+        <div class="content">
+            <h2>Ben Kimim?</h2>
+            <p>Merhaba, ben Marmara Üniversitesi'nde Bilgisayar Mühendisliği <strong>3. sınıf öğrencisiyim</strong>. Teknolojiye ve yazılıma büyük bir ilgi duyuyor, kendimi sürekli geliştirmeyi hedefliyorum.</p>
+            <p>Özellikle <em>siber güvenlik</em>, işletim sistemleri ve veritabanı yönetimi konularında derinleşmeyi ve yenilikçi projeler üretmeyi seviyorum.</p>
 
-        <h3>Motivasyonum</h3>
-        <blockquote>
-            "İyi yazılmış bir kod ve güvenli bir sistem, hem geliştiriciyi hem de son kullanıcıyı mutlu eder."
-        </blockquote>
+            <h2>Motivasyonum</h2>
+            <blockquote class="styled-quote">
+                "İyi yazılmış bir kod ve güvenli bir sistem, hem geliştiriciyi hem de son kullanıcıyı mutlu eder."
+            </blockquote>
 
-        <h3>Hedeflerim</h3>
-        <ol>
-            <li>Modern web teknolojilerini ve güvenlik standartlarını öğrenmek</li>
-            <li>Linux ortamında bash script yeteneklerimi ilerletmek</li>
-            <li>Veritabanı (SQL) ve backend sistemlerinde uzmanlaşmak</li>
-        </ol>
-        
-        <p><a href="index.html">Ana sayfaya geri dön</a></p>
+            <h2>Hedeflerim</h2>
+            <ol class="styled-list">
+                <li>Modern web teknolojilerini ve güvenlik standartlarını öğrenmek</li>
+                <li>Linux ortamında bash script yeteneklerimi ilerletmek</li>
+                <li>Veritabanı (SQL) ve backend sistemlerinde uzmanlaşmak</li>
+            </ol>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Eğitim Bilgilerim</h2>
+            <div class="skill-group">
+                <h3>Üniversite</h3>
+                <p>Marmara Üniversitesi<br>Bilgisayar Mühendisliği (Lisans)</p>
+            </div>
+            <div class="skill-group">
+                <h3>Aktif Dersler</h3>
+                <p>İşletim Sistemleri, Veritabanı Yönetimi, Mikrodenetleyiciler, Sinyaller ve Sistemler, Web Programlama</p>
+            </div>
+            <a href="contact.html" class="action-btn">İletişime Geç</a>
+        </aside>
     </main>
 
     <footer>
-        <p>&copy; 2026 Web Programlama Dersi</p>
+        <p>&copy; 2026 Arif Batuhan BAHAR - Root Access Granted.</p>
     </footer>
 </body>
 </html>
