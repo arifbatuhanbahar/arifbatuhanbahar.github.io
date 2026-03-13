@@ -2,35 +2,37 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>İletişim</title>
+    <title>İletişim | Arif Batuhan BAHAR</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
         <h1>İletişim</h1>
-        <h2>Benimle iletişime geçebileceğiniz bilgiler</h2>
+        <h2>Benimle iletişime geçebileceğiniz bilgiler ve iletişim formu</h2>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="about.html">Hakkımda</a></li>
-            <li><a href="interests.html">İlgi Alanlarım</a></li>
-            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="index.html">/home/root</a></li>
+            <li><a href="about.html">/usr/about</a></li>
+            <li><a href="interests.html">/etc/interests</a></li>
+            <li><a href="contact.html">/var/contact</a></li>
         </ul>
     </nav>
 
-    <main>
-        <h3>İletişim Bilgilerim</h3>
-        <ul>
-            <li>E-posta: <a href="mailto:arifbatuhanbahar@gmail.com">arifbatuhanbahar@gmail.com</a></li>
-            <li>Telefon: +90 551 828 35 66</li>
-            <li>GitHub: <a href="https://github.com/arifbatuhanbahar" target="arifbatuhanbahar">GitHub Profilim</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/arif-batuhan-bahar-58b42228a" target="arifbatuhanbahar">LinkedIn Profilim</a></li>
-        </ul>
+    <main class="container" style="display: block; max-width: 800px;">
+        <div class="content" style="width: 100%; border-top: 5px solid #10b981; margin-bottom: 30px;">
+            <h3>İletişim Bilgilerim</h3>
+            <ul>
+                <li>E-posta: <a href="mailto:arifbatuhanbahar@gmail.com">arifbatuhanbahar@gmail.com</a></li>
+                <li>Telefon: +90 551 828 35 66</li>
+                <li>GitHub: <a href="https://github.com/arifbatuhanbahar" target="_blank">GitHub Profilim</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/arif-batuhan-bahar-58b42228a" target="_blank">LinkedIn Profilim</a></li>
+            </ul>
+        </div>
 
         <div class="contact-container">
-            <h2 style="text-align: center; border-bottom: none; margin-bottom: 30px;">Detaylı İletişim Formu</h2>
+            <h2 style="text-align: center; border-bottom: none;">Detaylı İletişim Formu</h2>
             <form action="#" method="POST">
                 
                 <label for="fullName">Ad Soyad:</label>
@@ -72,7 +74,7 @@
                 </select>
 
                 <label for="resume">Özgeçmiş (CV) veya Fotoğraf Yükle:</label>
-                <input type="file" id="resume" name="resume">
+                <input type="file" id="resume" name="resume" class="file-input">
 
                 <label for="message">Mesajınız:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Detaylı mesajınızı buraya yazabilirsiniz..." required></textarea>
@@ -84,11 +86,10 @@
                 
             </form>
         </div>
-        <p><a href="index.html">Ana sayfaya geri dön</a></p>
-    </main>
+        </main>
 
     <footer>
-        <p>&copy; 2026 Web Programlama Dersi</p>
+        <p>&copy; 2026 Arif Batuhan BAHAR - Root Access Granted.</p>
     </footer>
 </body>
 </html>
