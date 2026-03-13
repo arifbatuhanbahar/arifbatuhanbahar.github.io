@@ -1,4 +1,12 @@
-h1, h2, p {
+/* ========================================
+   GENEL STILLER
+   ======================================== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin-top: 0;
 }
@@ -8,6 +16,10 @@ body {
     padding: 0;
     background-color: #f3f4f6;
 }
+
+/* ========================================
+   NAVİGASYON
+   ======================================== */
 
 nav {
     background-color: #111827;
@@ -44,7 +56,11 @@ nav ul li a:hover {
     background-color: rgba(59, 130, 246, 0.1);
 }
 
-header {
+/* ========================================
+   HEADER
+   ======================================== */
+
+header.hero-header {
     text-align: center;
     padding: 60px 20px;
     background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
@@ -52,22 +68,29 @@ header {
     border-bottom: 4px solid #3b82f6;
 }
 
-header h1 {
+header.hero-header h1 {
     color: #f9fafb;
     margin-bottom: 15px;
     font-size: 40px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-header p {
+header.hero-header p {
     color: #9ca3af;
     font-size: 20px;
+    margin: 0;
+    font-family: 'Courier New', monospace;
 }
+
+/* ========================================
+   ANA DÜZEN (2 KOLON: İÇERİK + SIDEBAR)
+   ======================================== */
 
 .container {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     padding: 0 20px;
     gap: 30px;
 }
@@ -77,7 +100,7 @@ header p {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     border-top: 5px solid #6366f1;
 }
 
@@ -86,56 +109,276 @@ header p {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     border-top: 5px solid #ec4899;
 }
 
-.container h2 {
+.content h2,
+.sidebar h2 {
     color: #111827;
     border-bottom: 2px solid #f3f4f6;
     padding-bottom: 12px;
     margin-bottom: 25px;
+    font-size: 22px;
 }
 
-.container p {
+.content p,
+.sidebar p {
     font-size: 16px;
     color: #4b5563;
     line-height: 1.7;
-    text-align: left;
     margin-bottom: 20px;
 }
+
+/* ========================================
+   İÇERİK ELEMANLARI
+   ======================================== */
+
+.skill-group {
+    margin-bottom: 25px;
+}
+
+.skill-group h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.skill-group p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #374151;
+}
+
+.action-btn {
+    display: block;
+    margin-top: 30px;
+    padding: 14px 20px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Liste stilleri */
+.styled-list {
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 2;
+    padding-left: 22px;
+    margin-bottom: 30px;
+}
+
+/* Blockquote stili */
+.styled-quote {
+    border-left: 4px solid #6366f1;
+    margin: 0 0 30px 0;
+    padding: 15px 20px;
+    background-color: #f5f3ff;
+    border-radius: 0 8px 8px 0;
+    color: #4b5563;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Definition list stili */
+.styled-dl dt {
+    color: #111827;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.styled-dl dd {
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-left: 0;
+    padding-left: 16px;
+    border-left: 3px solid #e5e7eb;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   TERMİNAL PENCERESİ (index.html)
+   ======================================== */
+
+.terminal-window {
+    border-top-color: #374151 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #374151;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.terminal-header .title {
+    color: #9ca3af;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    margin-left: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red    { background-color: #ef4444; }
+.dot.yellow { background-color: #f59e0b; }
+.dot.green  { background-color: #10b981; }
+
+.terminal-body {
+    padding: 30px 40px;
+    background-color: #1f2937;
+}
+
+.terminal-body p {
+    color: #d1fae5;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.prompt {
+    color: #34d399;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+    color: #34d399 !important;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
 
 footer {
     text-align: center;
     padding: 30px;
     background-color: #111827;
-    margin-top: 60px;
 }
 
 footer p {
     margin: 0;
     color: #6b7280;
     font-size: 14px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* --- İletişim Sayfası ve Form Gereksinimleri --- */
+/* ========================================
+   İLETİŞİM SAYFASI
+   ======================================== */
 
 .contact-page-main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     padding: 0 20px;
 }
 
+.contact-info {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #6366f1;
+    margin-bottom: 10px;
+}
+
+.contact-info h2 {
+    color: #111827;
+    font-size: 22px;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info ul li {
+    color: #4b5563;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f4f6;
+    line-height: 1.6;
+}
+
+.contact-info ul li:last-child {
+    border-bottom: none;
+}
+
+.contact-info ul li a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.section-divider {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #d1d5db;
+}
+
+/* ========================================
+   LAB 3 - CONTACT CONTAINER (Box Model)
+   ======================================== */
+
+/* 1. Genişlik + ortalama */
 .contact-container {
     width: 600px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 30px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
+
+    /* 2. İç boşluk (padding) */
+    padding: 35px 40px;
+
+    /* 3. Kenarlık ve köşe yuvarlaması */
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+
     background-color: #ffffff;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07);
+}
+
+.contact-container h2 {
+    color: #111827;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 15px;
 }
 
 .contact-container label {
@@ -143,81 +386,55 @@ footer p {
     font-weight: 600;
     margin-bottom: 8px;
     color: #374151;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
+/* 4. input, select, textarea: width 100%, padding, margin-bottom */
 .contact-container input,
 .contact-container select,
 .contact-container textarea {
     width: 100%;
-    padding: 12px;
+    padding: 12px 14px;
     margin-bottom: 20px;
     border: 1px solid #d1d5db;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: 14px;
-}
-
-/* Radio, Checkbox ve Dosya girdileri için genişlik düzeltmesi */
-.contact-container input[type="radio"],
-.contact-container input[type="checkbox"] {
-    width: auto;
-    margin-bottom: 10px;
-    margin-right: 8px;
-    display: inline-block;
-}
-
-.contact-container input[type="file"] {
-    width: auto;
-    padding: 0;
-    border: none;
-    margin-bottom: 20px;
-}
-
-.contact-container .radio-group,
-.contact-container .checkbox-group {
-    background-color: #f9fafb;
-    padding: 15px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    border: 1px solid #f3f4f6;
-}
-
-.contact-container .radio-group label,
-.contact-container .checkbox-group label {
-    display: inline;
-    font-weight: normal;
-}
-
-.button-group {
-    display: flex;
-    gap: 15px;
-}
-
-.contact-container button {
-    border: none;
-    padding: 15px 20px;
     border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-    color: #ffffff;
-    flex: 1;
-    transition: background-color 0.3s;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #374151;
+    background-color: #f9fafb;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.contact-container input:focus,
+.contact-container select:focus,
+.contact-container textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    background-color: #ffffff;
+}
+
+.contact-container textarea {
+    resize: vertical;
+}
+
+/* 5. Gönder butonu: arka plan rengi, border kaldırma, padding */
 .contact-container .submit-btn {
-    background-color: #007bff;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
 }
 
 .contact-container .submit-btn:hover {
-    background-color: #0056b3;
-}
-
-.contact-container .reset-btn {
-    background-color: #dc3545;
-}
-
-.contact-container .reset-btn:hover {
-    background-color: #c82333;
+    background-color: #2563eb;
 }
