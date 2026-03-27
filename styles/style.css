@@ -438,3 +438,387 @@ footer p {
 .contact-container .submit-btn:hover {
     background-color: #2563eb;
 }
+
+/* ========================================
+   WEBLAB FLEXBOX SAYFASI
+   ======================================== */
+
+.flexbox-lab-page {
+    margin: 0;
+    background: #ececf2;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #2f3343;
+}
+
+.flexbox-lab-page * {
+    box-sizing: border-box;
+}
+
+.lab-wrapper {
+    height: 100vh;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1.2vh 1.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.lab-navbar,
+.lab-hero,
+.lab-cards,
+.lab-grow,
+.lab-footer {
+    background-color: #f6f6fa;
+    border: 1px solid #e0e1eb;
+    border-radius: 8px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.lab-navbar {
+    height: 10vh;
+    min-height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+}
+
+.lab-logo {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #555a6b;
+}
+
+.lab-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.lab-menu a {
+    text-decoration: none;
+    color: #5d6173;
+    font-size: 13px;
+}
+
+.lab-hints {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.lab-hints span {
+    background: #ececf3;
+    border: 1px solid #dfe0e8;
+    color: #72778b;
+    font-size: 11px;
+    line-height: 1;
+    padding: 5px 10px;
+    border-radius: 999px;
+}
+
+.lab-wrapper > .lab-hints {
+    margin-top: -0.5vh;
+    margin-bottom: 0.2vh;
+    padding: 0 4px;
+}
+
+.lab-hero {
+    height: 30vh;
+    min-height: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 18px;
+    padding: 16px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.hero-content h1 {
+    margin: 0 0 6px;
+    font-size: 33px;
+    color: #404457;
+}
+
+.hero-content p {
+    margin: 0 0 12px;
+    color: #676d81;
+    font-size: 17px;
+}
+
+.lab-button {
+    display: inline-block;
+    width: 118px;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6f9eea;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.hero-line {
+    margin-top: 10px;
+    width: 72%;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #d9dbe5, #ebeef6);
+}
+
+.in-section {
+    margin-top: auto;
+}
+
+.hero-visual {
+    flex: 1;
+    border: 1px solid #d6d8e2;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #ededf4 0%, #e8e9f1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder-icon {
+    position: relative;
+    width: 96px;
+    height: 68px;
+}
+
+.ph-circle {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #cfd3df;
+}
+
+.ph-mountain {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 34px;
+    background: #cfd3df;
+    clip-path: polygon(0 100%, 28% 44%, 45% 70%, 65% 34%, 100% 100%);
+}
+
+.lab-cards {
+    height: 30vh;
+    min-height: 222px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.head-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.head-tags span {
+    background: #ececf3;
+    border: 1px solid #dfe0e8;
+    color: #70758a;
+    font-size: 11px;
+    line-height: 1;
+    padding: 5px 10px;
+    border-radius: 999px;
+}
+
+.lab-cards h2,
+.lab-grow h2 {
+    margin: 0;
+    color: #3f4354;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+    align-content: flex-start;
+}
+
+.lab-card {
+    flex: 1 1 calc((100% - 20px) / 3);
+    min-width: 142px;
+    padding: 10px;
+    border: 1px solid #d8dae4;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lab-card h3 {
+    margin: 0 0 6px;
+    font-size: 23px;
+    color: #3f4354;
+}
+
+.lab-card p {
+    margin: 0 0 10px;
+    color: #676d80;
+    font-size: 16px;
+}
+
+.card-line {
+    margin-bottom: 8px;
+    height: 3px;
+    width: 92%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #d8dae5, #eceef6);
+}
+
+.lab-card button,
+.grow-box button {
+    border: none;
+    background-color: #6f9eea;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.lab-grow {
+    height: 20vh;
+    min-height: 182px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grow-row {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    flex: 1;
+}
+
+.grow-box {
+    border-radius: 8px;
+    border: 1px solid #d8dae4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grow-one {
+    flex-grow: 1;
+    background-color: #dcebf8;
+}
+
+.grow-two {
+    flex-grow: 2;
+    background-color: #deefd9;
+}
+
+.grow-three {
+    flex-grow: 1;
+    background-color: #f7e3cd;
+}
+
+.grow-box h3 {
+    margin: 0 0 4px;
+    color: #414557;
+    font-size: 31px;
+}
+
+.grow-box p {
+    margin: 0 0 10px;
+    color: #606578;
+    font-size: 15px;
+}
+
+.lab-footer {
+    height: 10vh;
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lab-footer p {
+    margin: 0;
+    color: #666a7b;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .lab-wrapper {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .lab-wrapper > .lab-hints {
+        margin-top: 0;
+    }
+
+    .lab-navbar,
+    .lab-hero,
+    .lab-cards,
+    .lab-grow,
+    .lab-footer {
+        height: auto;
+        min-height: 130px;
+    }
+
+    .lab-navbar {
+        min-height: 84px;
+    }
+
+    .lab-menu {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .lab-hero {
+        flex-direction: column;
+    }
+
+    .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cards-grid {
+        align-content: stretch;
+    }
+
+    .lab-card {
+        flex-basis: calc((100% - 10px) / 2);
+    }
+
+    .grow-row {
+        flex-direction: column;
+    }
+}
