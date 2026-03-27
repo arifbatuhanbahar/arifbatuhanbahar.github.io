@@ -21,25 +21,25 @@ body {
    NAVİGASYON
    ======================================== */
 
-nav {
+body:not(.flexbox-lab-page) > nav {
     background-color: #111827;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+body:not(.flexbox-lab-page) > nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+body:not(.flexbox-lab-page) > nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
 
-nav ul li a {
+body:not(.flexbox-lab-page) > nav ul li a {
     text-decoration: none;
     color: #d1d5db;
     font-weight: 600;
@@ -50,7 +50,7 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
+body:not(.flexbox-lab-page) > nav ul li a:hover {
     color: #ffffff;
     border-color: #3b82f6;
     background-color: rgba(59, 130, 246, 0.1);
@@ -482,6 +482,8 @@ footer p {
     justify-content: space-between;
     align-items: center;
     padding: 0 18px;
+    position: relative;
+    z-index: 2;
 }
 
 .lab-logo {
@@ -499,6 +501,9 @@ footer p {
     text-decoration: none;
     color: #5d6173;
     font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    z-index: 3;
 }
 
 .lab-hints {
@@ -518,9 +523,10 @@ footer p {
 }
 
 .lab-wrapper > .lab-hints {
-    margin-top: -0.5vh;
+    margin-top: 0;
     margin-bottom: 0.2vh;
     padding: 0 4px;
+    pointer-events: none;
 }
 
 .lab-hero {
@@ -650,7 +656,7 @@ footer p {
 .lab-grow h2 {
     margin: 0;
     color: #3f4354;
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -664,8 +670,8 @@ footer p {
 
 .lab-card {
     flex: 1 1 calc((100% - 20px) / 3);
-    min-width: 142px;
-    padding: 10px;
+    min-width: 150px;
+    padding: 8px;
     border: 1px solid #d8dae4;
     border-radius: 8px;
     background-color: #ffffff;
@@ -676,14 +682,14 @@ footer p {
 
 .lab-card h3 {
     margin: 0 0 6px;
-    font-size: 23px;
+    font-size: 16px;
     color: #3f4354;
 }
 
 .lab-card p {
     margin: 0 0 10px;
     color: #676d80;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .card-line {
@@ -699,9 +705,9 @@ footer p {
     border: none;
     background-color: #6f9eea;
     color: #ffffff;
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -749,13 +755,13 @@ footer p {
 .grow-box h3 {
     margin: 0 0 4px;
     color: #414557;
-    font-size: 31px;
+    font-size: 18px;
 }
 
 .grow-box p {
     margin: 0 0 10px;
     color: #606578;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .lab-footer {
