@@ -842,6 +842,8 @@ footer p {
     justify-content: center;
     align-items: center;
     color: #111827;
+    background-size: 140% 140%;
+    animation: position-bg-shift 20s ease-in-out infinite;
 }
 
 .position-lab-page * {
@@ -877,6 +879,7 @@ footer p {
         0 35px 80px rgba(15, 23, 42, 0.18),
         0 0 0 1px rgba(148, 163, 184, 0.15);
     overflow: hidden;
+    animation: position-card-float 7s ease-in-out infinite;
 }
 
 .position-lab-card-gradient {
@@ -991,6 +994,7 @@ footer p {
 .position-lab-badge-free {
     top: 18px;
     left: 28px;
+    animation: position-badge-drift 10s ease-in-out infinite;
 }
 
 .position-lab-badge-date {
@@ -1073,16 +1077,55 @@ footer p {
         box-shadow:
             0 0 0 0 rgba(236, 72, 153, 0.4),
             0 20px 45px rgba(88, 28, 135, 0.6);
+        transform: translateY(0) scale(1);
     }
     60% {
         box-shadow:
             0 0 0 24px rgba(236, 72, 153, 0),
             0 22px 50px rgba(88, 28, 135, 0.75);
+        transform: translateY(-4px) scale(1.04);
     }
     100% {
         box-shadow:
             0 0 0 0 rgba(236, 72, 153, 0),
             0 20px 45px rgba(88, 28, 135, 0.6);
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes position-card-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes position-bg-shift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes position-badge-drift {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
