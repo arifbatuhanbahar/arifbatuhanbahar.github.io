@@ -853,8 +853,8 @@ footer p {
 .position-lab-wrapper {
     position: relative;
     width: min(1100px, 100vw - 64px);
-    min-height: 520px;
-    padding: 56px 24px 52px;
+    min-height: 620px;
+    padding: 64px 24px 80px;
 }
 
 .position-lab-heading {
@@ -872,7 +872,7 @@ footer p {
     position: relative;
     max-width: 720px;
     margin: 0 auto;
-    padding: 40px 44px 72px;
+    padding: 44px 52px 86px;
     border-radius: 30px;
     background: rgba(15, 23, 42, 0.78);
     backdrop-filter: blur(26px);
@@ -880,7 +880,7 @@ footer p {
         0 35px 80px rgba(15, 23, 42, 0.18),
         0 0 0 1px rgba(148, 163, 184, 0.15);
     overflow: hidden;
-    animation: position-card-float 7s ease-in-out infinite;
+    animation: position-card-float 7s ease-in-out infinite alternate;
 }
 
 .position-lab-card-gradient {
@@ -925,13 +925,13 @@ footer p {
 
 .position-lab-card-content h1 {
     font-size: clamp(30px, 4.4vw, 38px);
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     letter-spacing: -0.03em;
     color: #f9fafb;
 }
 
 .position-lab-card-content p {
-    font-size: 15px;
+    font-size: 15.5px;
     line-height: 1.8;
     color: #e5e7eb;
     max-width: 34rem;
@@ -964,7 +964,7 @@ footer p {
     left: 50%;
     bottom: -26px;
     transform: translateX(-50%);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
 }
 
@@ -978,8 +978,9 @@ footer p {
 }
 
 .position-lab-card:hover .position-lab-location {
-    transform: translate(-50%, -6px);
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.22);
+    transform: translate(-50%, -10px) scale(1.03);
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.35);
+    background-color: #ffffff;
 }
 
 .position-lab-badge {
@@ -993,28 +994,31 @@ footer p {
     background-color: rgba(248, 250, 252, 0.96);
     box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
     cursor: default;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.25s ease;
 }
 
 .position-lab-badge-free {
     top: 18px;
     left: 28px;
-    animation: position-badge-drift 10s ease-in-out infinite;
+    animation: position-badge-drift 9s ease-in-out infinite;
 }
 
 .position-lab-badge-date {
     top: 26px;
     right: 34px;
+    animation: position-badge-drift 11s ease-in-out infinite;
 }
 
 .position-lab-badge-deadline {
     bottom: 24px;
     right: 40px;
+    animation: position-badge-drift 10s ease-in-out infinite reverse;
 }
 
 .position-lab-card:hover .position-lab-badge {
-    transform: translateY(-3px);
-    box-shadow: 0 18px 30px rgba(15, 23, 42, 0.28);
+    transform: translateY(-8px) scale(1.06);
+    box-shadow: 0 22px 40px rgba(15, 23, 42, 0.34);
+    background-color: rgba(248, 250, 252, 1);
 }
 
 .position-lab-home-btn {
@@ -1035,7 +1039,7 @@ footer p {
 }
 
 .position-lab-home-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px) scale(1.03);
     background: linear-gradient(135deg, #1d4ed8, #4338ca);
     box-shadow: 0 16px 40px rgba(37, 99, 235, 0.55);
 }
@@ -1074,7 +1078,7 @@ footer p {
     text-align: center;
     font-size: 13px;
     color: #6b7280;
-    padding-top: 46px;
+    padding-top: 60px;
 }
 
 @keyframes position-helper-pulse {
@@ -1136,7 +1140,7 @@ footer p {
 
 @media (max-width: 768px) {
     .position-lab-wrapper {
-        padding: 96px 16px 56px;
+        padding: 96px 16px 90px;
     }
 
     .position-lab-card {
@@ -1163,4 +1167,17 @@ footer p {
         right: 20px;
         bottom: 20px;
     }
+}
+
+/* Global button & link cursor for interactive elements */
+button,
+.action-btn,
+.lab-button,
+.lab-card button,
+.grow-box button,
+.position-lab-home-btn,
+.position-lab-helper-btn,
+.position-lab-location,
+nav a {
+    cursor: pointer;
 }
