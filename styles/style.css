@@ -927,13 +927,18 @@ footer p {
     font-size: clamp(30px, 4.4vw, 38px);
     margin-bottom: 18px;
     letter-spacing: -0.03em;
-    color: #f9fafb;
+    background: linear-gradient(120deg, #e5e7eb, #ffffff, #f97316);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: position-title-glow 6s ease-in-out infinite alternate;
 }
 
 .position-lab-card-content p {
     font-size: 15.5px;
     line-height: 1.8;
     color: #e5e7eb;
+    animation: position-body-fade 8s ease-in-out infinite alternate;
     max-width: 34rem;
     margin-bottom: 32px;
 }
@@ -1019,6 +1024,11 @@ footer p {
     transform: translateY(-8px) scale(1.06);
     box-shadow: 0 22px 40px rgba(15, 23, 42, 0.34);
     background-color: rgba(248, 250, 252, 1);
+}
+
+.position-lab-badge:hover {
+    transform: translateY(-14px) scale(1.1) rotate(-2deg);
+    box-shadow: 0 26px 46px rgba(15, 23, 42, 0.4);
 }
 
 .position-lab-home-btn {
@@ -1134,6 +1144,36 @@ footer p {
         transform: translateY(-4px);
     }
     100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes position-title-glow {
+    0% {
+        text-shadow: 0 0 0 rgba(248, 250, 252, 0.0);
+        letter-spacing: -0.03em;
+    }
+    50% {
+        text-shadow: 0 0 18px rgba(248, 250, 252, 0.55);
+        letter-spacing: -0.025em;
+    }
+    100% {
+        text-shadow: 0 0 8px rgba(248, 250, 252, 0.25);
+        letter-spacing: -0.03em;
+    }
+}
+
+@keyframes position-body-fade {
+    0% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-4px);
+    }
+    100% {
+        opacity: 0.9;
         transform: translateY(0);
     }
 }
