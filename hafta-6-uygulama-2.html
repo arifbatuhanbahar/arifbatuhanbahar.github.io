@@ -27,8 +27,8 @@
 
     <main class="container">
         <div class="content">
-            <div class="apps-grid two-col">
-                <section class="app-card" aria-label="Birim Dönüştürücü - 1">
+            <div class="apps-grid">
+                <section class="app-card" aria-label="Birim Dönüştürücü">
                     <h2 class="app-title">Birim Dönüştürücü</h2>
                     <p class="app-subtitle">Değer girin, dönüşüm tipini seçin, sonucu anında görün.</p>
 
@@ -70,49 +70,6 @@
                         <p class="result-row">Sonuç: <strong class="js-output">-</strong></p>
                     </div>
                 </section>
-
-                <section class="app-card" aria-label="Birim Dönüştürücü - 2">
-                    <h2 class="app-title">Birim Dönüştürücü</h2>
-                    <p class="app-subtitle">Aynı dönüştürücünün ikinci örneği (PDF’deki gibi yan yana).</p>
-
-                    <form class="app-form js-converter" data-result-format="fixed3" autocomplete="off">
-                        <div>
-                            <label>Değer Giriniz</label>
-                            <input name="value" type="text" inputmode="decimal" placeholder="Örn: 50" required>
-                        </div>
-                        <div>
-                            <label>Dönüşüm Tipi</label>
-                            <select name="type" required>
-                                <optgroup label="Sıcaklık">
-                                    <option value="C_TO_F">Celsius → Fahrenheit</option>
-                                    <option value="F_TO_C">Fahrenheit → Celsius</option>
-                                    <option value="C_TO_K">Celsius → Kelvin</option>
-                                    <option value="K_TO_C">Kelvin → Celsius</option>
-                                </optgroup>
-                                <optgroup label="Uzunluk">
-                                    <option value="M_TO_KM">Metre → Kilometre</option>
-                                    <option value="KM_TO_M">Kilometre → Metre</option>
-                                    <option value="KM_TO_MI">Kilometre → Mil</option>
-                                    <option value="MI_TO_KM">Mil → Kilometre</option>
-                                </optgroup>
-                                <optgroup label="Ağırlık">
-                                    <option value="KG_TO_G" selected>Kilogram → Gram</option>
-                                    <option value="G_TO_KG">Gram → Kilogram</option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <div class="app-actions">
-                            <button class="app-btn app-btn-primary" type="submit">Hesapla</button>
-                            <button class="app-btn app-btn-secondary js-clear" type="button">Temizle</button>
-                        </div>
-                    </form>
-
-                    <div class="app-error hidden js-error" role="alert"></div>
-                    <div class="app-result hidden js-result" aria-live="polite">
-                        <p class="result-row">Sonuç: <strong class="js-output">-</strong></p>
-                    </div>
-                </section>
             </div>
         </div>
 
@@ -124,7 +81,7 @@
             </div>
             <div class="skill-group">
                 <h3>Örnek</h3>
-                <p>Celsius → Fahrenheit: \( F = C \times 1.8 + 32 \)</p>
+                <p>Celsius → Fahrenheit: F = C × 1.8 + 32</p>
             </div>
             <a href="hafta-6-uygulama-1.html" class="action-btn">Hafta 6 Uygulama 1’e Git</a>
         </aside>
