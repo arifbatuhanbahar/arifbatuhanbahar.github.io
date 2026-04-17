@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 6 Uygulama 1 | Öğrenci Not Hesaplama</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="weblab-flexbox.html">Flexbox Uygulama</a></li>
+            <li><a href="weblab-position.html">Position Uygulama</a></li>
+            <li><a href="hafta-6-uygulama-1.html">Hafta 6 Uygulama 1</a></li>
+            <li><a href="hafta-6-uygulama-2.html">Hafta 6 Uygulama 2</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-header">
+        <h1>Hafta 6 Uygulama 1</h1>
+        <p>>_ Öğrenci not hesaplama (vize %40, final %60)</p>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <div class="app-card">
+                <h2 class="app-title">Öğrenci Not Hesaplama</h2>
+                <p class="app-subtitle">
+                    Ad Soyad, Vize ve Final notunu girin. Sistem ortalamayı hesaplar, harf notunu üretir ve
+                    \( \ge 50 \) ise “Geçti” yazar.
+                </p>
+
+                <form id="gradeForm" class="app-form" autocomplete="off">
+                    <div>
+                        <label for="fullName">Ad Soyad</label>
+                        <input id="fullName" name="fullName" type="text" placeholder="Örn: Filiz Akın" required>
+                    </div>
+
+                    <div>
+                        <label for="midterm">Vize Notu</label>
+                        <input id="midterm" name="midterm" type="text" inputmode="decimal" placeholder="0 - 100" required>
+                    </div>
+
+                    <div>
+                        <label for="final">Final Notu</label>
+                        <input id="final" name="final" type="text" inputmode="decimal" placeholder="0 - 100" required>
+                    </div>
+
+                    <div class="app-actions">
+                        <button class="app-btn app-btn-primary" type="submit">Hesapla</button>
+                        <button class="app-btn app-btn-secondary" type="button" id="clearGrade">Temizle</button>
+                    </div>
+                </form>
+
+                <div id="gradeError" class="app-error hidden" role="alert"></div>
+
+                <div id="gradeResult" class="app-result hidden" aria-live="polite">
+                    <p class="result-row"><strong id="resName">-</strong></p>
+                    <p class="result-row">Ortalama: <strong id="resAvg">-</strong></p>
+                    <p class="result-row">Harf Notu: <strong id="resLetter">-</strong></p>
+                    <div id="resBadge" class="app-badge app-badge-success">Durum: Geçti</div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Kurallar</h2>
+            <div class="skill-group">
+                <h3>Ortalama</h3>
+                <p>Ortalama = (Vize × 0.40) + (Final × 0.60)</p>
+            </div>
+            <div class="skill-group">
+                <h3>Geçti / Kaldı</h3>
+                <p>Ortalama \( \ge 50 \) ise <strong>Geçti</strong>, değilse <strong>Kaldı</strong>.</p>
+            </div>
+            <div class="skill-group">
+                <h3>Harf Notu</h3>
+                <p>
+                    90-100 AA, 85-89 BA, 80-84 BB, 75-79 CB, 70-74 CC, 65-69 DC, 60-64 DD, 50-59 FD, 0-49 FF
+                </p>
+            </div>
+            <a href="hafta-6-uygulama-2.html" class="action-btn">Hafta 6 Uygulama 2’ye Git</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arif Batuhan BAHAR - Root Access Granted.</p>
+    </footer>
+
+    <script src="scripts/grade-calculator.js" defer></script>
+</body>
+</html>
+

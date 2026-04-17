@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 6 Uygulama 2 | Birim Dönüştürücü</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="weblab-flexbox.html">Flexbox Uygulama</a></li>
+            <li><a href="weblab-position.html">Position Uygulama</a></li>
+            <li><a href="hafta-6-uygulama-1.html">Hafta 6 Uygulama 1</a></li>
+            <li><a href="hafta-6-uygulama-2.html">Hafta 6 Uygulama 2</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero-header">
+        <h1>Hafta 6 Uygulama 2</h1>
+        <p>>_ Mühendislik birimleri dönüştürücü</p>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <div class="apps-grid two-col">
+                <section class="app-card" aria-label="Birim Dönüştürücü - 1">
+                    <h2 class="app-title">Birim Dönüştürücü</h2>
+                    <p class="app-subtitle">Değer girin, dönüşüm tipini seçin, sonucu anında görün.</p>
+
+                    <form class="app-form js-converter" data-result-format="compact" autocomplete="off">
+                        <div>
+                            <label>Değer Giriniz</label>
+                            <input name="value" type="text" inputmode="decimal" placeholder="Örn: 50" required>
+                        </div>
+                        <div>
+                            <label>Dönüşüm Tipi</label>
+                            <select name="type" required>
+                                <optgroup label="Sıcaklık">
+                                    <option value="C_TO_F">Celsius → Fahrenheit</option>
+                                    <option value="F_TO_C">Fahrenheit → Celsius</option>
+                                    <option value="C_TO_K">Celsius → Kelvin</option>
+                                    <option value="K_TO_C">Kelvin → Celsius</option>
+                                </optgroup>
+                                <optgroup label="Uzunluk">
+                                    <option value="M_TO_KM">Metre → Kilometre</option>
+                                    <option value="KM_TO_M">Kilometre → Metre</option>
+                                    <option value="KM_TO_MI">Kilometre → Mil</option>
+                                    <option value="MI_TO_KM">Mil → Kilometre</option>
+                                </optgroup>
+                                <optgroup label="Ağırlık">
+                                    <option value="KG_TO_G">Kilogram → Gram</option>
+                                    <option value="G_TO_KG">Gram → Kilogram</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="app-actions">
+                            <button class="app-btn app-btn-primary" type="submit">Hesapla</button>
+                            <button class="app-btn app-btn-secondary js-clear" type="button">Temizle</button>
+                        </div>
+                    </form>
+
+                    <div class="app-error hidden js-error" role="alert"></div>
+                    <div class="app-result hidden js-result" aria-live="polite">
+                        <p class="result-row">Sonuç: <strong class="js-output">-</strong></p>
+                    </div>
+                </section>
+
+                <section class="app-card" aria-label="Birim Dönüştürücü - 2">
+                    <h2 class="app-title">Birim Dönüştürücü</h2>
+                    <p class="app-subtitle">Aynı dönüştürücünün ikinci örneği (PDF’deki gibi yan yana).</p>
+
+                    <form class="app-form js-converter" data-result-format="fixed3" autocomplete="off">
+                        <div>
+                            <label>Değer Giriniz</label>
+                            <input name="value" type="text" inputmode="decimal" placeholder="Örn: 50" required>
+                        </div>
+                        <div>
+                            <label>Dönüşüm Tipi</label>
+                            <select name="type" required>
+                                <optgroup label="Sıcaklık">
+                                    <option value="C_TO_F">Celsius → Fahrenheit</option>
+                                    <option value="F_TO_C">Fahrenheit → Celsius</option>
+                                    <option value="C_TO_K">Celsius → Kelvin</option>
+                                    <option value="K_TO_C">Kelvin → Celsius</option>
+                                </optgroup>
+                                <optgroup label="Uzunluk">
+                                    <option value="M_TO_KM">Metre → Kilometre</option>
+                                    <option value="KM_TO_M">Kilometre → Metre</option>
+                                    <option value="KM_TO_MI">Kilometre → Mil</option>
+                                    <option value="MI_TO_KM">Mil → Kilometre</option>
+                                </optgroup>
+                                <optgroup label="Ağırlık">
+                                    <option value="KG_TO_G" selected>Kilogram → Gram</option>
+                                    <option value="G_TO_KG">Gram → Kilogram</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="app-actions">
+                            <button class="app-btn app-btn-primary" type="submit">Hesapla</button>
+                            <button class="app-btn app-btn-secondary js-clear" type="button">Temizle</button>
+                        </div>
+                    </form>
+
+                    <div class="app-error hidden js-error" role="alert"></div>
+                    <div class="app-result hidden js-result" aria-live="polite">
+                        <p class="result-row">Sonuç: <strong class="js-output">-</strong></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Notlar</h2>
+            <div class="skill-group">
+                <h3>Ondalık Ayırıcı</h3>
+                <p>Virgül veya nokta ile girilen değerler desteklenir (örn: 12,5 / 12.5).</p>
+            </div>
+            <div class="skill-group">
+                <h3>Örnek</h3>
+                <p>Celsius → Fahrenheit: \( F = C \times 1.8 + 32 \)</p>
+            </div>
+            <a href="hafta-6-uygulama-1.html" class="action-btn">Hafta 6 Uygulama 1’e Git</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arif Batuhan BAHAR - Root Access Granted.</p>
+    </footer>
+
+    <script src="scripts/unit-converter.js" defer></script>
+</body>
+</html>
+
