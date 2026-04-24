@@ -1433,6 +1433,31 @@ body.hafta7-page {
     --bs-border-radius-lg: 1rem;
 }
 
+body.hafta7-page .navbar {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+body.hafta7-page .navbar .navbar-brand {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+}
+
+body.hafta7-page .navbar .nav-link {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+body.hafta7-page .navbar .btn {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+body.hafta7-page .navbar.sticky-top {
+    min-height: 56px;
+}
+
 body.hafta7-page .hero {
     background:
         radial-gradient(circle at 20% 10%, rgba(13, 110, 253, 0.16), transparent 55%),
