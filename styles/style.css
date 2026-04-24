@@ -1074,6 +1074,10 @@ footer p {
     box-shadow: 0 16px 40px rgba(37, 99, 235, 0.55);
 }
 
+.position-lab-home-btn-secondary {
+    top: 68px;
+}
+
 .position-lab-helper-btn {
     position: fixed;
     right: 36px;
@@ -1413,4 +1417,102 @@ nav a {
     .apps-grid.two-col {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+/* ========================================
+   HAFTA 7 (Bootstrap sayfası) - scoped styles
+   ======================================== */
+
+body.hafta7-page {
+    scroll-behavior: smooth;
+
+    --bs-primary: #3b82f6;
+    --bs-success: #10b981;
+    --bs-secondary: #111827;
+    --bs-border-radius: 0.9rem;
+    --bs-border-radius-lg: 1rem;
+}
+
+body.hafta7-page .hero {
+    background:
+        radial-gradient(circle at 20% 10%, rgba(13, 110, 253, 0.16), transparent 55%),
+        radial-gradient(circle at 80% 30%, rgba(25, 135, 84, 0.14), transparent 50%);
+}
+
+body.hafta7-page .feature-card {
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+body.hafta7-page .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.12);
+}
+
+body.hafta7-page .result-card {
+    position: sticky;
+    top: 92px;
+}
+
+@media (max-width: 991.98px) {
+    body.hafta7-page .result-card {
+        position: static;
+        top: auto;
+    }
+}
+
+body.hafta7-page.theme-dark {
+    background-color: #0b1220;
+    color: #e5e7eb;
+}
+
+body.hafta7-page.theme-dark .bg-body-tertiary {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+body.hafta7-page.theme-dark .border-top,
+body.hafta7-page.theme-dark .border-bottom,
+body.hafta7-page.theme-dark .border {
+    border-color: rgba(148, 163, 184, 0.25) !important;
+}
+
+body.hafta7-page.theme-dark .card {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(148, 163, 184, 0.25);
+}
+
+body.hafta7-page.theme-dark .text-body-secondary {
+    color: rgba(229, 231, 235, 0.75) !important;
+}
+
+body.hafta7-page.theme-dark .navbar {
+    background-color: rgba(15, 23, 42, 0.9) !important;
+}
+
+body.hafta7-page.theme-dark .nav-link,
+body.hafta7-page.theme-dark .navbar-brand {
+    color: rgba(226, 232, 240, 0.9) !important;
+}
+
+body.hafta7-page.theme-dark .nav-link:hover,
+body.hafta7-page.theme-dark .navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+body.hafta7-page.theme-dark .form-control,
+body.hafta7-page.theme-dark .form-select {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: rgba(148, 163, 184, 0.25);
+    color: rgba(226, 232, 240, 0.95);
+}
+
+body.hafta7-page.theme-dark .form-control::placeholder {
+    color: rgba(226, 232, 240, 0.55);
+}
+
+body.hafta7-page.theme-dark .form-control:focus,
+body.hafta7-page.theme-dark .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: rgba(96, 165, 250, 0.6);
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+    color: rgba(226, 232, 240, 0.95);
 }
