@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/hafta7.css" />
 </head>
-<body>
+<body id="top">
   <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">Arif Batuhan</a>
@@ -33,7 +33,7 @@
     </div>
   </nav>
 
-  <header class="py-5">
+  <header class="py-5 hero">
     <div class="container py-2">
       <div class="row align-items-center g-4">
         <div class="col-12 col-lg-7">
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-5">
-          <div class="p-4 rounded-4 border bg-body-tertiary">
+          <div class="p-4 rounded-4 border bg-body-tertiary shadow-sm">
             <div class="d-flex align-items-center gap-3">
               <div class="rounded-circle bg-primary-subtle text-primary fw-bold d-inline-flex align-items-center justify-content-center"
                 style="width: 46px; height: 46px;">H7</div>
@@ -71,20 +71,26 @@
     <section class="container mb-5">
       <div class="row g-4">
         <div class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm feature-card">
             <div class="card-body">
-              <h2 class="h5 card-title">Bootstrap Grid</h2>
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge rounded-pill text-bg-primary">Grid</span>
+                <h2 class="h5 card-title mb-0">Bootstrap Grid</h2>
+              </div>
               <p class="card-text text-body-secondary">
-                `container / row / col` yapısıyla ekran boyutuna göre uyumlu bir yerleşim oluşturulur.
+                Container / row / col yapısıyla ekran boyutuna göre uyumlu bir yerleşim oluşturulur.
               </p>
               <a class="btn btn-outline-primary btn-sm" href="#basvuruFormu">Formu Gör</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm feature-card">
             <div class="card-body">
-              <h2 class="h5 card-title">Bileşenler</h2>
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge rounded-pill text-bg-secondary">UI</span>
+                <h2 class="h5 card-title mb-0">Bileşenler</h2>
+              </div>
               <p class="card-text text-body-secondary">
                 Navbar, kartlar, butonlar ve form elemanları hazır sınıflarla hızlıca şık görünür.
               </p>
@@ -93,11 +99,14 @@
           </div>
         </div>
         <div class="col-12 col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm feature-card">
             <div class="card-body">
-              <h2 class="h5 card-title">JavaScript Etkileşimi</h2>
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge rounded-pill text-bg-success">JS</span>
+                <h2 class="h5 card-title mb-0">JavaScript Etkileşimi</h2>
+              </div>
               <p class="card-text text-body-secondary">
-                Tema değişimi için sınıf toggle; form gönderiminde `preventDefault()` ile özet üretimi.
+                Tema değişimi için sınıf toggle; form gönderiminde preventDefault ile özet üretimi.
               </p>
               <button class="btn btn-primary btn-sm" type="button" id="scrollResultBtn">Sonuç Alanına Git</button>
             </div>
@@ -109,7 +118,7 @@
     <section class="container" id="basvuruFormu">
       <div class="row g-4">
         <div class="col-12 col-lg-7">
-          <div class="p-4 p-md-5 rounded-4 border bg-body-tertiary">
+          <div class="p-4 p-md-5 rounded-4 border bg-body-tertiary shadow-sm">
             <h2 class="h4 fw-bold mb-3">Etkinlik Başvurusu</h2>
             <p class="text-body-secondary mb-4">
               Aşağıdaki formu doldurun. Gönderince sayfa yenilenmez; verilerden başvuru özeti oluşturulur.
@@ -163,7 +172,7 @@
         </div>
 
         <div class="col-12 col-lg-5">
-          <div class="card shadow-sm" id="resultArea">
+          <div class="card shadow-sm result-card" id="resultArea">
             <div class="card-body">
               <h2 class="h5 card-title">Başvuru Özeti</h2>
               <p class="text-body-secondary mb-3">

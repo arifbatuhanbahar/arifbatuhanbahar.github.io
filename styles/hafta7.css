@@ -1,5 +1,36 @@
 /* Minimal overrides: only for JS theme toggle. */
 
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(13, 110, 253, 0.16), transparent 55%),
+    radial-gradient(circle at 80% 30%, rgba(25, 135, 84, 0.14), transparent 50%);
+}
+
+.feature-card {
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.12);
+}
+
+.result-card {
+  position: sticky;
+  top: 92px;
+}
+
+@media (max-width: 991.98px) {
+  .result-card {
+    position: static;
+    top: auto;
+  }
+}
+
 body.theme-dark {
   background-color: #0b1220;
   color: #e5e7eb;
@@ -36,5 +67,24 @@ body.theme-dark .navbar-brand {
 body.theme-dark .nav-link:hover,
 body.theme-dark .navbar-brand:hover {
   color: #ffffff !important;
+}
+
+body.theme-dark .form-control,
+body.theme-dark .form-select {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(148, 163, 184, 0.25);
+  color: rgba(226, 232, 240, 0.95);
+}
+
+body.theme-dark .form-control::placeholder {
+  color: rgba(226, 232, 240, 0.55);
+}
+
+body.theme-dark .form-control:focus,
+body.theme-dark .form-select:focus {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(96, 165, 250, 0.6);
+  box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+  color: rgba(226, 232, 240, 0.95);
 }
 

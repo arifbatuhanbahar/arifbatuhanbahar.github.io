@@ -32,11 +32,15 @@ body:not(.flexbox-lab-page) > nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 12px;
 }
 
 body:not(.flexbox-lab-page) > nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: block;
+    margin: 0;
 }
 
 body:not(.flexbox-lab-page) > nav ul li a {
@@ -54,6 +58,22 @@ body:not(.flexbox-lab-page) > nav ul li a:hover {
     color: #ffffff;
     border-color: #3b82f6;
     background-color: rgba(59, 130, 246, 0.1);
+}
+
+@media (max-width: 640px) {
+    body:not(.flexbox-lab-page) > nav {
+        padding: 14px 10px;
+    }
+
+    body:not(.flexbox-lab-page) > nav ul {
+        gap: 8px 8px;
+    }
+
+    body:not(.flexbox-lab-page) > nav ul li a {
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 999px;
+    }
 }
 
 /* ========================================
