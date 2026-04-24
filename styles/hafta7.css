@@ -1,0 +1,40 @@
+/* Minimal overrides: only for JS theme toggle. */
+
+body.theme-dark {
+  background-color: #0b1220;
+  color: #e5e7eb;
+}
+
+body.theme-dark .bg-body-tertiary {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+body.theme-dark .border-top,
+body.theme-dark .border-bottom,
+body.theme-dark .border {
+  border-color: rgba(148, 163, 184, 0.25) !important;
+}
+
+body.theme-dark .card {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(148, 163, 184, 0.25);
+}
+
+body.theme-dark .text-body-secondary {
+  color: rgba(229, 231, 235, 0.75) !important;
+}
+
+body.theme-dark .navbar {
+  background-color: rgba(15, 23, 42, 0.9) !important;
+}
+
+body.theme-dark .nav-link,
+body.theme-dark .navbar-brand {
+  color: rgba(226, 232, 240, 0.9) !important;
+}
+
+body.theme-dark .nav-link:hover,
+body.theme-dark .navbar-brand:hover {
+  color: #ffffff !important;
+}
+
