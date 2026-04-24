@@ -1458,10 +1458,52 @@ body.hafta7-page .navbar.sticky-top {
     min-height: 56px;
 }
 
+body.hafta7-page .btn {
+    --bs-btn-padding-y: 0.42rem;
+    --bs-btn-padding-x: 0.78rem;
+    --bs-btn-font-size: 0.92rem;
+    --bs-btn-border-radius: 999px;
+    line-height: 1.15;
+}
+
+body.hafta7-page .btn.btn-sm {
+    --bs-btn-padding-y: 0.34rem;
+    --bs-btn-padding-x: 0.62rem;
+    --bs-btn-font-size: 0.82rem;
+}
+
+body.hafta7-page .badge {
+    font-size: 0.72rem;
+    padding: 0.38em 0.62em;
+    letter-spacing: 0.01em;
+}
+
 body.hafta7-page .hero {
     background:
         radial-gradient(circle at 20% 10%, rgba(13, 110, 253, 0.16), transparent 55%),
         radial-gradient(circle at 80% 30%, rgba(25, 135, 84, 0.14), transparent 50%);
+}
+
+body.hafta7-page .card {
+    border-radius: 1rem;
+}
+
+body.hafta7-page .card-body {
+    padding: 1.1rem 1.15rem;
+}
+
+body.hafta7-page .feature-card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+body.hafta7-page .feature-card .card-text {
+    margin-bottom: 0.75rem;
+}
+
+body.hafta7-page .feature-card .btn {
+    margin-top: auto;
 }
 
 body.hafta7-page .feature-card {
